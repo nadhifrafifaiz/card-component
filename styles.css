@@ -1,0 +1,97 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.kotak h1{
+    font-size: 1.5em;
+    font-family: Lexend Deca;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.subheading{
+    font-size: 0.8em;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.inner{
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.inner-num{
+    font-size: 1em;
+    font-family: Lexend Deca;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+    margin-bottom: 2px;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+.kotak{
+    width: 375px;
+    height: 298px;
+    overflow: hidden;
+}
+
+.red{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0 5% 5% 0;
+}
+
+.blue{
+    background-color: hsl(233, 47%, 7%);
+    border-radius: 5% 0 0 5%;
+}
+
+.image{
+    opacity: 50%;
+
+}
+
+
+.container-kotak{
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 800px) {
+    .container-kotak {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .red{
+        border-radius: 5% 5% 0 0;
+    }
+    .blue{
+        border-radius: 0 0 5% 5%;
+    }
+}
